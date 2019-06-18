@@ -16,8 +16,8 @@ Handy *Jupyter Notebooks*, *python scripts*, *mindmaps* and scientific literatur
 
 ## List of python function in utils
 * clean_up: Clean up you text and generate list of words for each document using `spaCy`.
-* compute_performance: Generate a model list for number of topics and compute c_v coherence and perplexity using `gensim.models.ldamodel.LdaModel`. It enables visualization of the optimal topic number for your model.
-* compute_performance_multicore: Generate a model list for number of topics and compute c_v coherence and perplexity using `gensim.models.ldamulticore.LdaMulticore`. It enables visualization of the optimal topic number for your model. 
+* compute_performance: Generate a model list for number of topics and compute c_v coherence and perplexity (if applicable) using either `gensim.models.ldamodel.LdaModel`, `gensim.models.ldamulticore.LdaMulticore` or `gensim.models.wrappers.LdaMallet`. It enables visualization of the optimal topic number for your model.
+* graph_performance: Graphics for visualizing the output of a compute performance for a LDA model list.
 
 ## Scientific Literature
 A *BibTeX* file with the relevant collection of scientific literature (mainly articles published in peer-reviewed journals). It is comprised of computer science literature about topic modeling algorithms and procedures; and social science literature about best practices and uses of topic modeling along with interesting applications of topic modeling to textual data.
