@@ -7,15 +7,17 @@ Handy *Jupyter Notebooks*, *python scripts*, *mindmaps* and scientific literatur
 * gensim-pre-process: tokenization, stopwords and stemming from `gensim`
 * gensim-topics: LDA in `gensim`
 * gensim-LDA-Mallet: LDA in `gensim` using a `MALLET` wrapper
-* gensim-optimal-topics: choose the number of topics to give the highest coherence value in LDA models in `gensim`
+* gensim-optimal-topics: choose the number of topics to give the highest coherence and perplexity values in LDA models in `gensim`
 * gensim-topic-analysis: exploratory analysis of topics from LDA models in `gensim`
 * scikit-learn-best-topic-model:  LDA in `scikit-learn` and optimal hyperparameter grid search; it also includes a pyLDAvis wrapper for `scikit-learn` for interactive LDA results visualization
 * gensim-topic-modeling-visualization: multiple strategies to visualize the results of a `gensim` LDA model
 * gensim-pyLDAvis: pyLDAvis wrapper for `gensim` for interactive LDA results visualization
 * Stop-words Comparison: *english* and *portuguese* stopwords comparison from `NLTK`, `spaCy` and `gensim`
 
-## List of python scripts in utils
-* clean_up: This function clean up you text and generate list of words for each document using `spaCy`.
+## List of python function in utils
+* clean_up: Clean up you text and generate list of words for each document using `spaCy`.
+* compute_performance: Generate a model list for number of topics and compute c_v coherence and perplexity using `gensim.models.ldamodel.LdaModel`. It enables visualization of the optimal topic number for your model.
+* compute_performance_multicore: Generate a model list for number of topics and compute c_v coherence and perplexity using `gensim.models.ldamulticore.LdaMulticore`. It enables visualization of the optimal topic number for your model. 
 
 ## Scientific Literature
 A *BibTeX* file with the relevant collection of scientific literature (mainly articles published in peer-reviewed journals). It is comprised of computer science literature about topic modeling algorithms and procedures; and social science literature about best practices and uses of topic modeling along with interesting applications of topic modeling to textual data.
